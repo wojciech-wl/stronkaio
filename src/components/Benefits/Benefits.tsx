@@ -7,7 +7,14 @@ const Benefits: React.FC = () => {
         <div id="features">
             <h2 className="sr-only">Features</h2>
             {benefits.map((item, index) => {
-                return <BenefitSection key={index} benefit={item} imageAtRight={index % 2 !== 0} />
+                return (
+                    <BenefitSection
+                        key={index}
+                        benefit={item}
+                        imageAtRight={index % 2 !== 0}
+                        className={index === 0 ? "mt-16" : undefined}
+                    />
+                )
             })}
         </div>
     )

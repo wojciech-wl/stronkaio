@@ -5,14 +5,18 @@ export interface IMenuItem {
 
 export interface IBenefit {
     title: string;
+    titleEn?: string;
     description: string;
+    descriptionEn?: string;
     imageSrc: string;
     bullets: IBenefitBullet[]
 }
 
 export interface IBenefitBullet {
     title: string;
+    titleEn?: string;
     description: string;
+    descriptionEn?: string;
     icon: JSX.Element;
 }
 
@@ -38,6 +42,7 @@ export interface IStats {
     title: string;
     icon: JSX.Element;
     description: string;
+    descriptionEn?: string;
 }
 
 export interface ISocials {

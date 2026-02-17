@@ -8,16 +8,19 @@ export const stats: IStats[] = [
     {
         title: "4M+",
         icon: <BsBarChartFill size={34} className="text-primary" />,
-        description: "Produktów w bazie Open Food Facts, dostępnych do skanowania kodów kreskowych."
+        description: "Produktów w bazie danych, dostępnych do skanowania kodów kreskowych.",
+        descriptionEn: "Products in Open Food Facts database, available for barcode scanning."
     },
     {
         title: "420+",
         icon: <FiBook size={34} className="text-primary" />,
-        description: "Pytań edukacyjnych w quizie wiedzy o insulinooporności."
+        description: "Pytań edukacyjnych w quizie wiedzy o insulinooporności.",
+        descriptionEn: "Educational questions in the insulin resistance knowledge quiz."
     },
     {
         title: "100%",
         icon: <PiGlobeFill size={34} className="text-primary" />,
-        description: "Prywatności. Brak kont, brak reklam, brak zbierania danych osobowych."
+        description: "Prywatności. Brak kont, brak reklam, brak zbierania danych osobowych.",
+        descriptionEn: "Privacy. No accounts, no ads, no personal data collection."
     }
 ];

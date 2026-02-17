@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import { Source_Sans_3, Manrope } from "next/font/google";
+import { Inter } from "next/font/google";
 
 import "./globals.css";
 
-const manrope = Manrope({ subsets: ['latin'] });
-const sourceSans = Source_Sans_3({ subsets: ['latin'] });
+const inter = Inter({
+    subsets: ['latin', 'latin-ext'],
+    variable: '--font-ui',
+    display: 'swap'
+});
 
 export const metadata: Metadata = {
     title: 'IR Assistant - Asystent IO',
@@ -18,7 +21,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="pl" suppressHydrationWarning>
-            <body className={`${manrope.className} ${sourceSans.className} antialiased`}>
+            <body className={`${inter.variable} antialiased`}>
                 {children}
             </body>
         </html>

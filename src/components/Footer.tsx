@@ -12,10 +12,10 @@ const Footer: React.FC = () => {
 
     return (
         <footer className="bg-hero-background text-foreground py-10">
-            <div className="mt-8 md:text-center text-foreground-accent px-6">
+            <div className="mt-8 text-center text-foreground-accent px-6">
                 <p>
                     Copyright &copy; {new Date().getFullYear()} {tBrand('name')}.
-                    {isEn ? ' All rights reserved.' : ' Wszelkie prawa zastrzezone.'}
+                    {isEn ? ' All rights reserved.' : ' Wszelkie prawa zastrzeżone.'}
                 </p>
                 {footerDetails.email && (
                     <a href={`mailto:${footerDetails.email}`} className="block mt-2 hover:text-foreground">

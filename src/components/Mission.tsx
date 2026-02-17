@@ -9,22 +9,22 @@ const missionPoints = {
         {
             icon: <FiHeart size={32} strokeWidth={1.5} />,
             title: "Pro bono",
-            description: "Aplikacja powstala z potrzeby pomocy. Tworca sam zmaga sie z insulinoopornoscia i wie, jak trudno znalezc rzetelne informacje."
+            description: "Aplikacja powstała z potrzeby pomocy. Twórca sam zmaga się z insulinoopornością i wie, jak trudno znaleźć rzetelne informacje."
         },
         {
             icon: <FiUsers size={32} strokeWidth={1.5} />,
-            title: "Spolecznosc",
-            description: "Budujemy spolecznosc osob z IO. Razem latwiej - dzielimy sie wiedza i wspieramy sie nawzajem."
+            title: "Społeczność",
+            description: "Budujemy społeczność osób z IO. Razem łatwiej - dzielimy się wiedzą i wspieramy się nawzajem."
         },
         {
             icon: <FiShield size={32} strokeWidth={1.5} />,
-            title: "Prywatnosc",
+            title: "Prywatność",
             description: "Nie zbieramy danych. Nie profilujemy. Nie sprzedajemy. Twoje zdrowie to Twoja sprawa."
         },
         {
             icon: <FiGift size={32} strokeWidth={1.5} />,
             title: "Zawsze za darmo",
-            description: "Podstawowe funkcje aplikacji zawsze beda darmowe. Bez reklam, bez ukrytych kosztow."
+            description: "Podstawowe funkcje aplikacji zawsze będą darmowe. Bez reklam, bez ukrytych kosztów."
         }
     ],
     en: [
@@ -86,7 +86,7 @@ const Mission: React.FC = () => {
                     <p className="text-foreground-accent text-lg max-w-2xl mx-auto leading-relaxed">
                         {isEn
                             ? 'We believe everyone deserves access to tools supporting their health. Regardless of financial situation.'
-                            : 'Wierzymy, ze kazdy zasluguje na dostep do narzedzi wspierajacych zdrowie. Bez wzgledu na sytuacje finansowa.'
+                            : 'Wierzymy, że każdy zasługuje na dostęp do narzędzi wspierających zdrowie. Bez względu na sytuację finansową.'
                         }
                     </p>
                 </motion.div>

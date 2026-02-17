@@ -11,6 +11,7 @@ import { IBenefit } from "@/types";
 interface Props {
     benefit: IBenefit;
     imageAtRight?: boolean;
+    className?: string;
 }
 
 const containerVariants: Variants = {
@@ -47,7 +48,7 @@ export const childVariants = {
     },
 };
 
-const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
+const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight, className }: Props) => {
     const locale = useLocale();
     const isEn = locale === 'en';
 
@@ -56,7 +57,7 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
     const { imageSrc, bullets } = benefit;
 
     return (
-        <section className="benefit-section">
+        <section className={clsx("benefit-section", className)}>
             <motion.div
                 className="flex flex-wrap flex-col items-center justify-center gap-2 lg:flex-row lg:gap-20 lg:flex-nowrap mb-24"
                 variants={containerVariants}

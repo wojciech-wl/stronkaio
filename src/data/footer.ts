@@ -9,7 +9,7 @@ export const footerDetails: {
     telephone: string;
     socials: ISocials;
 } = {
-    subheading: "Darmowy asystent dla osob z insulinoopornoscia. Pro bono, bez reklam, z szacunkiem do prywatnosci.",
+    subheading: "Darmowy asystent dla osób z insulinoopornością. Pro bono, bez reklam, z szacunkiem do prywatności.",
     subheadingEn: "Free assistant for people with insulin resistance. Pro bono, no ads, with respect for privacy.",
     quickLinks: [
         {
@@ -25,7 +25,7 @@ export const footerDetails: {
             url: "#contact"
         },
         {
-            text: "Polityka Prywatnosci",
+            text: "Polityka Prywatności",
             url: "https://asystentioapp-spec.github.io/asystentio-legal/"
         }
     ],
