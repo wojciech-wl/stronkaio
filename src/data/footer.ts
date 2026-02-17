@@ -2,12 +2,15 @@ import { IMenuItem, ISocials } from "@/types";
 
 export const footerDetails: {
     subheading: string;
+    subheadingEn: string;
     quickLinks: IMenuItem[];
+    quickLinksEn: IMenuItem[];
     email: string;
     telephone: string;
     socials: ISocials;
 } = {
-    subheading: "Darmowy asystent dla osób z insulinoopornością. Pro bono, bez reklam, z szacunkiem do prywatności.",
+    subheading: "Darmowy asystent dla osob z insulinoopornoscia. Pro bono, bez reklam, z szacunkiem do prywatnosci.",
+    subheadingEn: "Free assistant for people with insulin resistance. Pro bono, no ads, with respect for privacy.",
     quickLinks: [
         {
             text: "Funkcje",
@@ -22,7 +25,25 @@ export const footerDetails: {
             url: "#contact"
         },
         {
-            text: "Polityka Prywatności",
+            text: "Polityka Prywatnosci",
+            url: "https://asystentioapp-spec.github.io/asystentio-legal/"
+        }
+    ],
+    quickLinksEn: [
+        {
+            text: "Features",
+            url: "#features"
+        },
+        {
+            text: "Our Mission",
+            url: "#mission"
+        },
+        {
+            text: "Contact",
+            url: "#contact"
+        },
+        {
+            text: "Privacy Policy",
             url: "https://asystentioapp-spec.github.io/asystentio-legal/"
         }
     ],

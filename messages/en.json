@@ -1,4 +1,7 @@
 {
+  "brand": {
+    "name": "IR Assistant"
+  },
   "metadata": {
     "title": "IR Assistant | Your companion in fighting insulin resistance",
     "description": "Free app helping people with insulin resistance make better food choices. Scan products, analyze menus, learn about IR. No ads, no data collection."

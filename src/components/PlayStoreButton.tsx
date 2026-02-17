@@ -5,7 +5,7 @@ import { ctaDetails } from '@/data/cta'
 
 const PlayStoreButton = ({ dark }: { dark?: boolean }) => {
     return (
-        <a href={ctaDetails.googlePlayUrl}>
+        <a href={ctaDetails.googlePlayUrl} target="_blank" rel="noopener noreferrer">
             <button
                 type="button"
                 className={clsx("flex items-center justify-center min-w-[205px] mt-3 px-6 h-14 rounded-full w-full sm:w-fit", { "text-white bg-foreground": dark, "text-foreground bg-white": !dark })}

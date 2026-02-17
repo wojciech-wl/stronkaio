@@ -5,15 +5,26 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import { HiOutlineXMark, HiBars3 } from 'react-icons/hi2';
+import { useLocale, useTranslations } from 'next-intl';
+import { useRouter, usePathname } from '@/i18n/routing';
 
 import Container from './Container';
 import { menuItems } from '@/data/menuItems';
+import { ctaDetails } from '@/data/cta';
 
 const Header: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const locale = useLocale();
+    const tBrand = useTranslations('brand');
+    const router = useRouter();
+    const pathname = usePathname();
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
+    };
+
+    const switchLanguage = (newLocale: string) => {
+        router.replace(pathname, { locale: newLocale as 'pl' | 'en' });
     };
 
     return (
@@ -21,41 +32,81 @@ const Header: React.FC = () => {
             <Container className="!px-0">
                 <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-10">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center gap-2">
+                    <Link href={`/${locale}`} className="flex items-center gap-2">
                         <Image
                             src="/images/logo.png"
-                            alt="Asystent IO Logo"
-                            width={36}
-                            height={36}
-                            className="w-9 h-9"
+                            alt={tBrand('name')}
+                            width={256}
+                            height={384}
+                            priority
+                            className="h-10 md:h-20 w-auto object-contain"
                         />
-                        <span className="manrope text-xl font-semibold text-foreground cursor-pointer">
-                            Asystent IO
+                        <span className="manrope text-lg md:text-xl font-bold text-foreground cursor-pointer">
+                            {tBrand('name')}
                         </span>
                     </Link>
 
                     {/* Desktop Menu */}
-                    <ul className="hidden md:flex space-x-6">
+                    <ul className="hidden md:flex items-center space-x-6">
                         {menuItems.map(item => (
                             <li key={item.text}>
                                 <Link href={item.url} className="text-foreground hover:text-foreground-accent transition-colors">
-                                    {item.text}
+                                    {locale === 'pl' ? item.text : item.textEn || item.text}
                                 </Link>
                             </li>
                         ))}
+
+                        {/* Language Switcher */}
+                        <li className="flex items-center gap-1 border border-gray-300 rounded-full px-3 py-1">
+                            <button
+                                onClick={() => switchLanguage('pl')}
+                                className={`text-sm font-medium px-2 py-1 rounded-full transition-colors ${locale === 'pl' ? 'bg-primary text-white' : 'text-foreground hover:text-primary'}`}
+                            >
+                                PL
+                            </button>
+                            <span className="text-gray-300">|</span>
+                            <button
+                                onClick={() => switchLanguage('en')}
+                                className={`text-sm font-medium px-2 py-1 rounded-full transition-colors ${locale === 'en' ? 'bg-primary text-white' : 'text-foreground hover:text-primary'}`}
+                            >
+                                EN
+                            </button>
+                        </li>
+
                         <li>
-                            <Link href="#cta" className="text-white bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors">
-                                Pobierz
-                            </Link>
+                            <a
+                                href={ctaDetails.googlePlayUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-white bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors"
+                            >
+                                {locale === 'pl' ? 'Pobierz' : 'Download'}
+                            </a>
                         </li>
                     </ul>
 
                     {/* Mobile Menu Button */}
-                    <div className="md:hidden flex items-center">
+                    <div className="md:hidden flex items-center gap-2">
+                        {/* Mobile Language Switcher */}
+                        <div className="flex items-center gap-1 border border-gray-300 rounded-full px-2 py-1">
+                            <button
+                                onClick={() => switchLanguage('pl')}
+                                className={`text-xs font-medium px-1.5 py-0.5 rounded-full transition-colors ${locale === 'pl' ? 'bg-primary text-white' : 'text-foreground'}`}
+                            >
+                                PL
+                            </button>
+                            <button
+                                onClick={() => switchLanguage('en')}
+                                className={`text-xs font-medium px-1.5 py-0.5 rounded-full transition-colors ${locale === 'en' ? 'bg-primary text-white' : 'text-foreground'}`}
+                            >
+                                EN
+                            </button>
+                        </div>
+
                         <button
                             onClick={toggleMenu}
                             type="button"
-                            className="bg-primary text-black focus:outline-none rounded-full w-10 h-10 flex items-center justify-center"
+                            className="bg-primary text-white focus:outline-none rounded-full w-10 h-10 flex items-center justify-center"
                             aria-controls="mobile-menu"
                             aria-expanded={isOpen}
                         >
@@ -85,14 +136,20 @@ const Header: React.FC = () => {
                         {menuItems.map(item => (
                             <li key={item.text}>
                                 <Link href={item.url} className="text-foreground hover:text-primary block" onClick={toggleMenu}>
-                                    {item.text}
+                                    {locale === 'pl' ? item.text : item.textEn || item.text}
                                 </Link>
                             </li>
                         ))}
                         <li>
-                            <Link href="#cta" className="text-white bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit" onClick={toggleMenu}>
-                                Pobierz
-                            </Link>
+                            <a
+                                href={ctaDetails.googlePlayUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-white bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit"
+                                onClick={toggleMenu}
+                            >
+                                {locale === 'pl' ? 'Pobierz' : 'Download'}
+                            </a>
                         </li>
                     </ul>
                 </div>

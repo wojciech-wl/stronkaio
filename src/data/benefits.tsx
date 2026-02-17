@@ -5,90 +5,122 @@ import { IBenefit } from "@/types"
 export const benefits: IBenefit[] = [
     {
         title: "Skanowanie produktow",
-        description: "Skanuj kody kreskowe i etykiety produktow. Uzyskaj natychmiastowa ocene wpływu na poziom cukru we krwi.",
+        titleEn: "Product Scanning",
+        description: "Skanuj kody kreskowe i etykiety produktow. Uzyskaj natychmiastowa ocene wplywu na poziom cukru we krwi.",
+        descriptionEn: "Scan barcodes and product labels. Get instant assessment of impact on blood sugar levels.",
         bullets: [
             {
                 title: "Baza 4M+ produktow",
-                description: "Integracja z Open Food Facts - globalną bazą danych produktów spożywczych.",
+                titleEn: "4M+ Products Database",
+                description: "Integracja z Open Food Facts - globalna baza danych produktow spozywczych.",
+                descriptionEn: "Integration with Open Food Facts - a global food products database.",
                 icon: <FiSearch size={26} />
             },
             {
                 title: "OCR offline",
-                description: "Rozpoznawanie etykiet działa bez internetu dzięki AI na urządzeniu.",
+                titleEn: "Offline OCR",
+                description: "Rozpoznawanie etykiet dziala bez internetu dzieki AI na urzadzeniu.",
+                descriptionEn: "Label recognition works without internet thanks to on-device AI.",
                 icon: <FiCamera size={26} />
             },
             {
                 title: "Wynik 0-100",
-                description: "Przejrzysty scoring uwzględniający IO - od razu wiesz, czy produkt jest dla Ciebie.",
+                titleEn: "Score 0-100",
+                description: "Przejrzysty scoring uwzgledniajacy IO - od razu wiesz, czy produkt jest dla Ciebie.",
+                descriptionEn: "Clear scoring considering IR - you immediately know if the product is right for you.",
                 icon: <FiZap size={26} />
             }
         ],
-        imageSrc: "/images/mockup-1.webp"
+        imageSrc: "/images/feature-scan.png"
     },
     {
         title: "Analiza dan i menu",
-        description: "Zrób zdjęcie dania lub menu restauracyjnego. AI przeanalizuje skład i poda ranking najlepszych wyborow.",
+        titleEn: "Dish & Menu Analysis",
+        description: "Zrob zdjecie dania lub menu restauracyjnego. AI przeanalizuje sklad i poda ranking najlepszych wyborow.",
+        descriptionEn: "Take a photo of a dish or restaurant menu. AI will analyze the composition and provide a ranking of the best choices.",
         bullets: [
             {
-                title: "Analiza zdjęć dań",
-                description: "Zrób zdjęcie talerza - AI rozpozna składniki i oceni wpływ na glikemię.",
+                title: "Analiza zdjec dan",
+                titleEn: "Dish Photo Analysis",
+                description: "Zrob zdjecie talerza - AI rozpozna skladniki i oceni wplyw na glikemie.",
+                descriptionEn: "Take a photo of your plate - AI will recognize ingredients and assess glycemic impact.",
                 icon: <FiCamera size={26} />
             },
             {
                 title: "Skanowanie menu",
-                description: "Zrób zdjęcie karty menu - uzyskaj ranking dań od najlepszych do tych, których lepiej unikać.",
+                titleEn: "Menu Scanning",
+                description: "Zrob zdjecie karty menu - uzyskaj ranking dan od najlepszych do tych, ktorych lepiej unikac.",
+                descriptionEn: "Take a photo of the menu card - get a ranking from best to dishes to avoid.",
                 icon: <FiSearch size={26} />
             },
             {
                 title: "Wskazowki i tipy",
-                description: "Kazda analiza zawiera wyjaśnienie wyniku i praktyczne wskazówki.",
+                titleEn: "Tips & Guidance",
+                description: "Kazda analiza zawiera wyjasnienie wyniku i praktyczne wskazowki.",
+                descriptionEn: "Each analysis includes explanation of the score and practical tips.",
                 icon: <FiBookOpen size={26} />
             }
         ],
-        imageSrc: "/images/mockup-2.webp"
+        imageSrc: "/images/feature-menu.png"
     },
     {
         title: "Nauka o insulinoopornosci",
-        description: "Quiz z 420+ pytaniami, codzienne wskazówki i seria aktywności. Ucz się przez działanie, nie przez reguly.",
+        titleEn: "Learning About IR",
+        description: "Quiz z 420+ pytaniami, codzienne wskazowki i seria aktywnosci. Ucz sie przez dzialanie, nie przez reguly.",
+        descriptionEn: "Quiz with 420+ questions, daily tips and activity streaks. Learn by doing, not by rules.",
         bullets: [
             {
                 title: "Quiz wiedzy",
-                description: "Ponad 420 pytań w 5 kategoriach. Sprawdź swoją wiedzę i ucz się nowych rzeczy.",
+                titleEn: "Knowledge Quiz",
+                description: "Ponad 420 pytan w 5 kategoriach. Sprawdz swoja wiedze i ucz sie nowych rzeczy.",
+                descriptionEn: "Over 420 questions in 5 categories. Test your knowledge and learn new things.",
                 icon: <FiBookOpen size={26} />
             },
             {
-                title: "Codzienna wskazówka",
-                description: "Codziennie nowa, praktyczna porada o życiu z insulinoopornością.",
+                title: "Codzienna wskazowka",
+                titleEn: "Daily Tip",
+                description: "Codziennie nowa, praktyczna porada o zyciu z insulinoopornoscia.",
+                descriptionEn: "A new practical tip about living with insulin resistance every day.",
                 icon: <FiZap size={26} />
             },
             {
-                title: "Seria aktywności",
-                description: "Buduj nawyk codziennego korzystania z aplikacji i śledź swój postęp.",
+                title: "Seria aktywnosci",
+                titleEn: "Activity Streak",
+                description: "Buduj nawyk codziennego korzystania z aplikacji i sledz swoj postep.",
+                descriptionEn: "Build a habit of using the app daily and track your progress.",
                 icon: <FiSmartphone size={26} />
             }
         ],
-        imageSrc: "/images/mockup-1.webp"
+        imageSrc: "/images/feature-learn.png"
     },
     {
         title: "Prywatnosc w DNA",
-        description: "Nie zbieramy danych użytkowników. Brak kont, brak rejestracji, brak reklam. Twoje zdrowie, Twoja prywatność.",
+        titleEn: "Privacy in DNA",
+        description: "Nie zbieramy danych uzytkownikow. Brak kont, brak rejestracji, brak reklam. Twoje zdrowie, Twoja prywatnosc.",
+        descriptionEn: "We don't collect user data. No accounts, no registration, no ads. Your health, your privacy.",
         bullets: [
             {
                 title: "Brak kont",
+                titleEn: "No Accounts",
                 description: "Nie wymagamy rejestracji ani logowania. Zainstaluj i korzystaj.",
+                descriptionEn: "No registration or login required. Install and use.",
                 icon: <FiShield size={26} />
             },
             {
                 title: "Brak reklam",
-                description: "Zero reklam, zero trackerów, zero profilowania behawioralnego.",
+                titleEn: "No Ads",
+                description: "Zero reklam, zero trackerow, zero profilowania behawioralnego.",
+                descriptionEn: "Zero ads, zero trackers, zero behavioral profiling.",
                 icon: <FiShield size={26} />
             },
             {
                 title: "Lokalne przetwarzanie",
-                description: "Zdjęcia są przetwarzane lokalnie i natychmiast usuwane. Nic nie opuszcza Twojego urządzenia.",
+                titleEn: "Local Processing",
+                description: "Zdjecia sa przetwarzane lokalnie i natychmiast usuwane. Nic nie opuszcza Twojego urzadzenia.",
+                descriptionEn: "Photos are processed locally and immediately deleted. Nothing leaves your device.",
                 icon: <FiSmartphone size={26} />
             }
         ],
-        imageSrc: "/images/mockup-2.webp"
+        imageSrc: "/images/feature-privacy-v2.png"
     },
 ]

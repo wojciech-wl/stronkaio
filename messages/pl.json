@@ -1,4 +1,7 @@
 {
+  "brand": {
+    "name": "Asystent IO"
+  },
   "metadata": {
     "title": "IR Assistant - Asystent IO | Twoj pomocnik w walce z insulinoopornoscia",
     "description": "Darmowa aplikacja pomagajaca osobom z insulinoopornoscia w codziennych wyborach zywieniowych. Skanuj produkty, analizuj menu, ucz sie o IO. Bez reklam, bez zbierania danych."

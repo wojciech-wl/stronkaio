@@ -1,11 +1,16 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
+import { useLocale } from 'next-intl';
 
 import PlayStoreButton from './PlayStoreButton';
-
 import { heroDetails } from '@/data/hero';
 
 const Hero: React.FC = () => {
+    const locale = useLocale();
+    const isEn = locale === 'en';
+
     return (
         <section
             id="hero"
@@ -20,23 +25,25 @@ const Hero: React.FC = () => {
             </div>
 
             <div className="text-center">
-                <h1 className="text-4xl md:text-6xl md:leading-tight font-bold text-foreground max-w-lg md:max-w-2xl mx-auto">{heroDetails.heading}</h1>
-                <p className="mt-4 text-foreground max-w-lg mx-auto">{heroDetails.subheading}</p>
+                <h1 className="text-4xl md:text-6xl md:leading-tight font-bold text-foreground max-w-lg md:max-w-2xl mx-auto">
+                    {isEn ? heroDetails.headingEn : heroDetails.heading}
+                </h1>
+                <p className="mt-4 text-foreground max-w-lg mx-auto">
+                    {isEn ? heroDetails.subheadingEn : heroDetails.subheading}
+                </p>
                 <div className="mt-6 flex flex-col sm:flex-row items-center sm:gap-4 w-fit mx-auto">
-                    {/* iOS coming soon - hiding App Store button */}
-                    {/* <AppStoreButton dark /> */}
                     <PlayStoreButton dark />
                 </div>
                 <Image
                     src={heroDetails.centerImageSrc}
                     width={384}
-                    height={340}
+                    height={780}
                     quality={100}
-                    sizes="(max-width: 768px) 100vw, 384px"
+                    sizes="(max-width: 768px) 336px, 384px"
                     priority={true}
                     unoptimized={true}
-                    alt="app mockup"
-                    className='relative mt-12 md:mt-16 mx-auto z-10'
+                    alt="IR Assistant app mockup"
+                    className='relative mt-8 md:mt-12 mx-auto z-10 max-w-[336px] md:max-w-[384px] h-auto'
                 />
             </div>
         </section>
