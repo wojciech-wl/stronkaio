@@ -1,0 +1,112 @@
+{
+  "metadata": {
+    "title": "IR Assistant | Your companion in fighting insulin resistance",
+    "description": "Free app helping people with insulin resistance make better food choices. Scan products, analyze menus, learn about IR. No ads, no data collection."
+  },
+  "header": {
+    "features": "Features",
+    "mission": "Our Mission",
+    "contact": "Contact",
+    "download": "Download"
+  },
+  "hero": {
+    "heading": "Scan. Understand. Decide.",
+    "subheading": "Free assistant for people with insulin resistance. Scan products, analyze restaurant menus, learn about IR. No ads, no data collection."
+  },
+  "benefits": {
+    "scanning": {
+      "title": "Product Scanning",
+      "description": "Scan barcodes and product labels. Get instant assessment of impact on blood sugar levels.",
+      "bullet1_title": "4M+ Products Database",
+      "bullet1_desc": "Integration with Open Food Facts - a global food products database.",
+      "bullet2_title": "Offline OCR",
+      "bullet2_desc": "Label recognition works without internet thanks to on-device AI.",
+      "bullet3_title": "Score 0-100",
+      "bullet3_desc": "Clear scoring considering IR - you immediately know if the product is right for you."
+    },
+    "analysis": {
+      "title": "Dish & Menu Analysis",
+      "description": "Take a photo of a dish or restaurant menu. AI will analyze the composition and provide a ranking of the best choices.",
+      "bullet1_title": "Dish Photo Analysis",
+      "bullet1_desc": "Take a photo of your plate - AI will recognize ingredients and assess glycemic impact.",
+      "bullet2_title": "Menu Scanning",
+      "bullet2_desc": "Take a photo of the menu card - get a ranking from best to dishes to avoid.",
+      "bullet3_title": "Tips & Guidance",
+      "bullet3_desc": "Each analysis includes explanation of the score and practical tips."
+    },
+    "learning": {
+      "title": "Learning About IR",
+      "description": "Quiz with 420+ questions, daily tips and activity streaks. Learn by doing, not by rules.",
+      "bullet1_title": "Knowledge Quiz",
+      "bullet1_desc": "Over 420 questions in 5 categories. Test your knowledge and learn new things.",
+      "bullet2_title": "Daily Tip",
+      "bullet2_desc": "A new practical tip about living with insulin resistance every day.",
+      "bullet3_title": "Activity Streak",
+      "bullet3_desc": "Build a habit of using the app daily and track your progress."
+    },
+    "privacy": {
+      "title": "Privacy in DNA",
+      "description": "We don't collect user data. No accounts, no registration, no ads. Your health, your privacy.",
+      "bullet1_title": "No Accounts",
+      "bullet1_desc": "No registration or login required. Install and use.",
+      "bullet2_title": "No Ads",
+      "bullet2_desc": "Zero ads, zero trackers, zero behavioral profiling.",
+      "bullet3_title": "Local Processing",
+      "bullet3_desc": "Photos are processed locally and immediately deleted. Nothing leaves your device."
+    }
+  },
+  "mission": {
+    "title": "Our Mission",
+    "subtitle": "We believe everyone deserves access to tools supporting their health. Regardless of financial situation.",
+    "proBono": {
+      "title": "Pro Bono",
+      "description": "The app was created out of a need to help. The creator himself struggles with insulin resistance and knows how hard it is to find reliable information."
+    },
+    "community": {
+      "title": "Community",
+      "description": "We're building a community of people with IR. Together it's easier - we share knowledge, experiences and support each other."
+    },
+    "privacyValue": {
+      "title": "Privacy",
+      "description": "We don't collect data. We don't profile. We don't sell. Your health is your business - we just help."
+    },
+    "free": {
+      "title": "Always Free",
+      "description": "Basic app features will always be free. No ads, no hidden costs, no time limits."
+    },
+    "quote": "Insulin resistance affects millions of people. We want everyone to have access to a tool that helps make informed food choices. You don't have to be an expert - just scan the product.",
+    "author": "Wojciech Wlodek, Creator of IR Assistant"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "Is IR Assistant free?",
+    "a1": "Yes! The app is completely free and will remain so. Basic features (product scanning, label OCR, scan history, knowledge quiz) will always be available for free. No ads or hidden fees.",
+    "q2": "Do I need to create an account?",
+    "a2": "No! IR Assistant doesn't require registration or login. Just download the app and start using it. All data is stored locally on your device.",
+    "q3": "Does the app work offline?",
+    "a3": "Partially yes. Barcode scanning requires internet connection (to fetch product data), but label OCR works completely offline thanks to on-device AI. Scan history is always available offline.",
+    "q4": "What data do you collect?",
+    "a4": "Practically none. We don't collect personal data, don't identify users, don't track location. Photos are processed locally and immediately deleted. The only collected data is anonymous, aggregated usage statistics (optional).",
+    "q5": "How does the 0-100 scoring work?",
+    "a5": "The algorithm considers sugar content, net carbs, fiber, protein and detected high-GI ingredients (syrups, maltodextrin). Score 80-100 is OK (green), 40-79 is Limit (yellow), below 40 is Risk (red). Details in the app.",
+    "q6": "On which devices does the app work?",
+    "a6": "Currently IR Assistant is available on Android (Google Play). iOS version is in preparation. The app requires Android 6.0 or higher."
+  },
+  "stats": {
+    "products": "Products in Open Food Facts database, available for barcode scanning.",
+    "questions": "Educational questions in the insulin resistance knowledge quiz.",
+    "privacy": "Privacy. No accounts, no ads, no personal data collection."
+  },
+  "cta": {
+    "heading": "Start making informed choices today",
+    "subheading": "Download IR Assistant for free. No ads, no accounts, no data collection. Your health in your hands."
+  },
+  "footer": {
+    "subheading": "Free assistant for people with insulin resistance. Pro bono, no ads, with respect for privacy.",
+    "features": "Features",
+    "mission": "Our Mission",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "rights": "All rights reserved."
+  }
+}

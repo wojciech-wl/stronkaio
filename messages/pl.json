@@ -1,0 +1,112 @@
+{
+  "metadata": {
+    "title": "IR Assistant - Asystent IO | Twoj pomocnik w walce z insulinoopornoscia",
+    "description": "Darmowa aplikacja pomagajaca osobom z insulinoopornoscia w codziennych wyborach zywieniowych. Skanuj produkty, analizuj menu, ucz sie o IO. Bez reklam, bez zbierania danych."
+  },
+  "header": {
+    "features": "Funkcje",
+    "mission": "Nasza Misja",
+    "contact": "Kontakt",
+    "download": "Pobierz"
+  },
+  "hero": {
+    "heading": "Skanuj. Rozumiej. Decyduj.",
+    "subheading": "Darmowy asystent dla osob z insulinoopornoscia. Skanuj produkty, analizuj menu restauracyjne, ucz sie o IO. Bez reklam, bez zbierania danych."
+  },
+  "benefits": {
+    "scanning": {
+      "title": "Skanowanie produktow",
+      "description": "Skanuj kody kreskowe i etykiety produktow. Uzyskaj natychmiastowa ocene wplywu na poziom cukru we krwi.",
+      "bullet1_title": "Baza 4M+ produktow",
+      "bullet1_desc": "Integracja z Open Food Facts - globalna baza danych produktow spozywczych.",
+      "bullet2_title": "OCR offline",
+      "bullet2_desc": "Rozpoznawanie etykiet dziala bez internetu dzieki AI na urzadzeniu.",
+      "bullet3_title": "Wynik 0-100",
+      "bullet3_desc": "Przejrzysty scoring uwzgledniajacy IO - od razu wiesz, czy produkt jest dla Ciebie."
+    },
+    "analysis": {
+      "title": "Analiza dan i menu",
+      "description": "Zrob zdjecie dania lub menu restauracyjnego. AI przeanalizuje sklad i poda ranking najlepszych wyborow.",
+      "bullet1_title": "Analiza zdjec dan",
+      "bullet1_desc": "Zrob zdjecie talerza - AI rozpozna skladniki i oceni wplyw na glikemie.",
+      "bullet2_title": "Skanowanie menu",
+      "bullet2_desc": "Zrob zdjecie karty menu - uzyskaj ranking dan od najlepszych do tych, ktorych lepiej unikac.",
+      "bullet3_title": "Wskazowki i tipy",
+      "bullet3_desc": "Kazda analiza zawiera wyjasnienie wyniku i praktyczne wskazowki."
+    },
+    "learning": {
+      "title": "Nauka o insulinoopornosci",
+      "description": "Quiz z 420+ pytaniami, codzienne wskazowki i seria aktywnosci. Ucz sie przez dzialanie, nie przez reguly.",
+      "bullet1_title": "Quiz wiedzy",
+      "bullet1_desc": "Ponad 420 pytan w 5 kategoriach. Sprawdz swoja wiedze i ucz sie nowych rzeczy.",
+      "bullet2_title": "Codzienna wskazowka",
+      "bullet2_desc": "Codziennie nowa, praktyczna porada o zyciu z insulinoopornoscia.",
+      "bullet3_title": "Seria aktywnosci",
+      "bullet3_desc": "Buduj nawyk codziennego korzystania z aplikacji i sledz swoj postep."
+    },
+    "privacy": {
+      "title": "Prywatnosc w DNA",
+      "description": "Nie zbieramy danych uzytkownikow. Brak kont, brak rejestracji, brak reklam. Twoje zdrowie, Twoja prywatnosc.",
+      "bullet1_title": "Brak kont",
+      "bullet1_desc": "Nie wymagamy rejestracji ani logowania. Zainstaluj i korzystaj.",
+      "bullet2_title": "Brak reklam",
+      "bullet2_desc": "Zero reklam, zero trackerow, zero profilowania behawioralnego.",
+      "bullet3_title": "Lokalne przetwarzanie",
+      "bullet3_desc": "Zdjecia sa przetwarzane lokalnie i natychmiast usuwane. Nic nie opuszcza Twojego urzadzenia."
+    }
+  },
+  "mission": {
+    "title": "Nasza Misja",
+    "subtitle": "Wierzymy, ze kazdy zasluguje na dostep do narzedzi wspierajacych zdrowie. Bez wzgledu na sytuacje finansowa.",
+    "proBono": {
+      "title": "Pro bono",
+      "description": "Aplikacja powstala z potrzeby pomocy. Tworca sam zmaga sie z insulinoopornoscia i wie, jak trudno znalezc rzetelne informacje."
+    },
+    "community": {
+      "title": "Spolecznosc",
+      "description": "Budujemy spolecznosc osob z IO. Razem latwiej - dzielimy sie wiedza, doswiadczeniami i wspieramy sie nawzajem."
+    },
+    "privacyValue": {
+      "title": "Prywatnosc",
+      "description": "Nie zbieramy danych. Nie profilujemy. Nie sprzedajemy. Twoje zdrowie to Twoja sprawa - my tylko pomagamy."
+    },
+    "free": {
+      "title": "Zawsze za darmo",
+      "description": "Podstawowe funkcje aplikacji zawsze beda darmowe. Bez reklam, bez ukrytych kosztow, bez ograniczen czasowych."
+    },
+    "quote": "Insulinoopornosc dotyka miliony ludzi. Chcemy, zeby kazdy mial dostep do narzedzia, ktore pomoze podejmowac swiadome decyzje zywieniowe. Nie musisz byc ekspertem - wystarczy, ze skanujesz produkt.",
+    "author": "Wojciech Wlodek, Tworca Asystent IO"
+  },
+  "faq": {
+    "title": "Najczesciej zadawane pytania",
+    "q1": "Czy Asystent IO jest darmowy?",
+    "a1": "Tak! Aplikacja jest calkowicie darmowa i taka pozostanie. Podstawowe funkcje (skanowanie produktow, OCR etykiet, historia skanow, quiz wiedzy) zawsze beda dostepne za darmo. Nie ma reklam ani ukrytych oplat.",
+    "q2": "Czy musze zakladac konto?",
+    "a2": "Nie! Asystent IO nie wymaga rejestracji ani logowania. Po prostu pobierz aplikacje i zacznij korzystac. Wszystkie dane sa przechowywane lokalnie na Twoim urzadzeniu.",
+    "q3": "Czy aplikacja dziala offline?",
+    "a3": "Czesciowo tak. Skanowanie kodow kreskowych wymaga polaczenia z internetem (zeby pobrac dane produktu), ale OCR etykiet dziala calkowicie offline dzieki AI na urzadzeniu. Historia skanow jest zawsze dostepna offline.",
+    "q4": "Jakie dane zbieracie?",
+    "a4": "Praktycznie zadne. Nie zbieramy danych osobowych, nie identyfikujemy uzytkownikow, nie sledzimy lokalizacji. Zdjecia sa przetwarzane lokalnie i natychmiast usuwane. Jedyne zbierane dane to anonimowe, zagregowane statystyki uzycia (opcjonalne).",
+    "q5": "Jak dziala scoring 0-100?",
+    "a5": "Algorytm uwzglednia zawartosc cukrow, weglowodanow netto, blonnika, bialka oraz wykryte skladniki wysokoGI (syropy, maltodekstryna). Wynik 80-100 to OK (zielony), 40-79 to Limit (zolty), ponizej 40 to Ryzyko (czerwony). Szczegoly znajdziesz w aplikacji.",
+    "q6": "Na jakich urzadzeniach dziala aplikacja?",
+    "a6": "Obecnie Asystent IO jest dostepny na Androida (Google Play). Wersja na iOS jest w przygotowaniu. Aplikacja wymaga Androida 6.0 lub nowszego."
+  },
+  "stats": {
+    "products": "Produktow w bazie Open Food Facts, dostepnych do skanowania kodow kreskowych.",
+    "questions": "Pytan edukacyjnych w quizie wiedzy o insulinoopornosci.",
+    "privacy": "Prywatnosci. Brak kont, brak reklam, brak zbierania danych osobowych."
+  },
+  "cta": {
+    "heading": "Zacznij swiadomie wybierac produkty juz dzis",
+    "subheading": "Pobierz Asystent IO za darmo. Bez reklam, bez kont, bez zbierania danych. Twoje zdrowie w Twoich rekach."
+  },
+  "footer": {
+    "subheading": "Darmowy asystent dla osob z insulinoopornoscia. Pro bono, bez reklam, z szacunkiem do prywatnosci.",
+    "features": "Funkcje",
+    "mission": "Nasza Misja",
+    "contact": "Kontakt",
+    "privacy": "Polityka Prywatnosci",
+    "rights": "Wszelkie prawa zastrzezone."
+  }
+}
